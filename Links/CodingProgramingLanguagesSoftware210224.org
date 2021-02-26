@@ -1,0 +1,254 @@
+# 24 Feb 2021 10:36
+
+* Basic tools for programming
+  :PROPERTIES:
+  :DATE:     <2021-02-24 Wed 11:29>
+  :END:
+
+** EMACS
+
+https://xkcd.com/378/ nuff said
+
+;-)  https://i.stack.imgur.com/7Cu9Z.jpg
+
+- https://www.emacswiki.org/
+- https://www.emacswiki.org/emacs/EmacsAndXEmacs
+- https://www.emacswiki.org/emacs/EmacsImplementations
+
+** Atom
+
+https://atom.io/
+
+** Electron
+   :PROPERTIES:
+   :DATE:     <2021-02-24 Wed 11:29>
+   :END:
+
+https://www.electronjs.org/
+
+** Node.js
+
+https://nodejs.org/en/
+
+* Coding for art
+** Programming + Livecoding audio (and sometimes also graphics)
+   :PROPERTIES:
+   :DATE:     <2021-02-24 Wed 10:52>
+   :END:
+*** SuperCollider
+
+- Home page :: https://supercollider.github.io/
+- Forum :: https://scsynth.org/
+- Collection of code from the community (lots of interesting examples!) :: https://sccode.org/
+- Documentation (The help files) :: http://doc.sccode.org/ 
+
+**** Other music coding sites + blogs (SC-Related)
+     :PROPERTIES:
+     :DATE:     <2021-02-24 Wed 13:26>
+     :END:
+
+***** Thor Magnusson's book on SuperCollider scoring, online
+      :PROPERTIES:
+      :DATE:     <2021-02-26 Fri 17:33>
+      :END:
+
+https://thormagnusson.gitbooks.io/scoring/content/index.html
+
+****** Flute Physical model synthdef
+       :PROPERTIES:
+       :DATE:     <2021-02-26 Fri 19:58>
+       :END:
+
+The physical model of flute synthdef is found on this page of Thor Magnusson's book: 
+
+https://thormagnusson.gitbooks.io/scoring/content/PartII/chapter11.html
+
+The example in question is based on the technique of Digital Waveguides (https://ccrma.stanford.edu/~jos/pasp/Digital_Waveguide_Models.html)
+
+***** Gamelan and(/on) Supercollider
+      :PROPERTIES:
+      :DATE:     <2021-02-26 Fri 20:03>
+      :END:
+
+https://www.youtube.com/watch?v=At6J42sS5o8 Exchange Talk: Livecoding and the Javanese Gamelan – a Series of Inconclusive Battles
+
+https://www.youtube.com/watch?v=J52KxVJHqJo Virtual Gamelan - SuperCollider
+
+****** Nice example of actual Gamelan
+       :PROPERTIES:
+       :DATE:     <2021-02-26 Fri 20:31>
+       :END:
+
+https://www.youtube.com/watch?v=UEWCCSuHsuQ&t=113s
+
+Sound Tracker - Gamelan (Indonesia)
+
+And another one with dance: 
+
+https://www.youtube.com/watch?v=v4C7T0-G7Ho unbelievable super balinese dance , by 14 years old girl.
+
+And another one yet: 
+
+https://www.youtube.com/watch?v=69p60y3ePDg
+
+The Legong - Old Balinese Dance 1933 (Tari Legong Bali)
+
+***** Selected SC performances on Youtube
+      :PROPERTIES:
+      :DATE:     <2021-02-26 Fri 20:10>
+      :END:
+
+****** Supercollider - Live-coding session 11 : Full HD - Audio & Visuals, nasty sound
+       :PROPERTIES:
+       :DATE:     <2021-02-26 Fri 20:12>
+       :END:
+
+https://www.youtube.com/watch?v=_yryiuALe_c
+
+****** "Astral" : Some Live Coding With SuperCollider
+https://www.youtube.com/watch?v=WLV4Rx6YhSY
+
+****** Noodling around with FoxDot and SuperCollider
+https://www.youtube.com/watch?v=CXrkq7u69vU
+***** A live-coder and  algoraver: Blog/repo  of sc livecoder 34
+
+ https://theseanco.github.io/howto_co34pt_liveCode/
+
+ #+begin_quote
+ *About*
+
+ howto_co34pt_liveCode is an attempt to extensively document my live-coding music practice. I live code as coï¿¥ï¾¡pt, mostly making dance music (including for Algoraves), but I have also employed live coding as part of some other projects. This repo contains a number of articles and essays listed in this contents page which cover various aspects of my live coding practice from the ground up, and also contains a number of files to support your use of SuperCollider in the way that I use it. More info about this in 'What This Repo Is'
+
+ #+end_quote
+
+ The repo belongs to S. Cotterill, a live coder from Newcastle who uses SuperCollider and TidalCycles for music in the electronica/acid genre and gigs at AlgoRaves.
+
+****** Euclidean Rhythms on SC Pbind
+
+   https://theseanco.github.io/howto_co34pt_liveCode/3-4-Euclidean-Rhythms/
+
+*** gibber (also graphics)
+
+https://gibber.cc/alpha/playground/
+
+*** sonic pi
+
+https://sonic-pi.net/
+
+*** fox dot
+
+https://foxdot.org/
+
+*** tidal cycles
+
+https://tidalcycles.org/Welcome
+
+*** Orca (MIDI / OSC sequencer + esoteric minimal programming language)
+
+- https://github.com/hundredrabbits/Orca
+- https://llllllll.co/t/orca/22492
+
+** Alex McLean talk: Introduction to Live Coding Music and Visuals
+   :PROPERTIES:
+   :DATE:     <2021-02-26 Fri 20:23>
+   :END:
+
+https://www.youtube.com/watch?v=-QY2x6aZzqc
+
+** Algorave: algorithmic dance culture | Alex McLean | TEDxHull
+
+https://www.youtube.com/watch?v=nAGjTYa95HM
+
+** Toplap: The home of live coding
+   :PROPERTIES:
+   :DATE:     <2021-02-24 Wed 10:37>
+   :END:
+
+ https://toplap.org/
+
+** Programming with poetic verse: in.verse
+   :PROPERTIES:
+   :DATE:     <2021-02-24 Wed 10:37>
+   :END:
+
+- https://github.com/noisyneuron/inverse
+- https://gallery.inverse.website/
+** Livecoding graphics
+*** hydra 
+
+https://hydra-editor.glitch.me/
+**** Demo/Performance by the author: Olivia Jack
+
+Olivia Jack - Hydra, Live Coding Visuals in the Browser
+https://www.youtube.com/watch?v=cw7tPDrFIQg
+**** Introduction to the Hydra editor
+
+Synths & Things - Hydra-Editor introduction https://www.youtube.com/watch?v=FKBY6RctMPA
+
+*** in.verse
+
+- https://github.com/noisyneuron/inverse
+- https://gallery.inverse.website/
+
+** School for Poetic Computation
+
+NYC.  Zach Liebermann, Amit Pitaru
+
+https://sfpc.io/
+
+* Other audio / music software of interest
+  :PROPERTIES:
+  :DATE:     <2021-02-24 Wed 10:56>
+  :END:
+
+** AudioMulch
+
+http://www.audiomulch.com/
+
+** Sound Touch / Sound Stretch
+   :PROPERTIES:
+   :DATE:     <2021-02-24 Wed 11:11>
+   :END:
+
+- https://www.surina.net/soundtouch/
+- https://www.surina.net/soundtouch/soundstretch.html
+- https://gitlab.com/soundtouch
+
+** Pauls Stretch
+   :PROPERTIES:
+   :DATE:     <2021-02-24 Wed 11:05>
+   :END:
+
+- http://hypermammut.sourceforge.net/paulstretch/
+
+Note that a port for SuperCollider based on the Paul's Extreme Sound Stretch algorithm by Nasca Octavian Paul exists as single SynthDef.
+Online: https://sccode.org/1-5d6
+
+«Paulstretch for SuperCollider» by jpdrecourt, on 07 Apr'20 03:46 in ambient drone stretching
+
+Note: Code is included in the present repository under /Code/howtos/PaulStretch210222.scd
+
+** Renoise
+
+https://www.renoise.com/
+
+** Reason
+
+https://www.reasonstudios.com/en/reason
+
+** Reaktor
+
+https://www.native-instruments.com/en/products/komplete/synths/reaktor-6/
+
+** PD
+
+https://puredata.info/
+
+** Ableton Live
+
+https://www.ableton.com/en/
+
+** Max/MSP, Max for Live
+
+- https://cycling74.com/
+- https://www.ableton.com/en/live/max-for-live/

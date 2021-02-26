@@ -1,0 +1,25 @@
+
+* Eli Fieldsteel SuperCollider Tutorial Series
+  :PROPERTIES:
+  :DATE:     <2021-02-18 Thu 16:08>
+  :END:
+
+** Tutorial 0 and list of tutorials
+   :PROPERTIES:
+   :DATE:     <2021-02-18 Thu 16:09>
+   :END:
+
+ https://www.youtube.com/watch?v=yRzsOOiJ_p4&list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC
+
+* NS (Null State) Tutorial Series
+  :PROPERTIES:
+  :DATE:     <2021-02-18 Thu 15:49>
+  :END:
+
+** NS TUTORIAL SERIES (1-4) 
+ https://www.youtube.com/watch?t=218&v=Q4wE7kKLhEw
+
+** NS TUTORIAL SERIES (1-12) JitLib
+ https://www.youtube.com/watch?v=6XdTV1mVBC4
+
+

@@ -1,0 +1,30 @@
+# 24 Feb 2021 11:38
+
+*(Under development ...)*
+
+* Zach Liebermann
+* Amit Pitaru
+* James McCartney
+* Ross Bencina
+* Julian Rohrhuber
+* Alberto de Campo
+* Olivia Jack
+* Alex McLean
+* Toplap
+* S. Cotterill
+  :PROPERTIES:
+  :DATE:     <2021-02-24 Wed 14:07>
+  :END:
+
+S. Cotterill is a live coder from Newcastle who uses SuperCollider and TidalCycles for music in the electronica/acid genre and gigs at AlgoRaves.
+
+https://theseanco.github.io/howto_co34pt_liveCode/
+
+https://soundcloud.com/co-3-4-pt
+
+#+begin_quote
+*About*
+
+howto_co34pt_liveCode is an attempt to extensively document my live-coding music practice. I live code as coï¿¥ï¾¡pt, mostly making dance music (including for Algoraves), but I have also employed live coding as part of some other projects. This repo contains a number of articles and essays listed in this contents page which cover various aspects of my live coding practice from the ground up, and also contains a number of files to support your use of SuperCollider in the way that I use it. More info about this in 'What This Repo Is'
+
+#+end_quote
