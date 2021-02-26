@@ -1,0 +1,645 @@
+# 27 Nov 2020 12:05 Some topics to write more about
+
+* Infrastructure
+** Variables
+*** kinds of variables: local, global, environment, interpreter, instance, class
+**** local variables
+**** global variables
+**** environment variables
+**** instance variables
+**** class variables
+**** special variables
+***** this
+***** thisFunction
+***** thisMethod
+***** thisProcess
+***** currentEnvironment
+***** super
+***** pi
+** Collections
+*** Basic types of collections: Array, Dictionary, Set
+*** Important variants: List, Event
+*** Sets vs. Bags
+*** Exotic variants: LinkedList, Interval, MultiLevelIdentityDictionary
+*** The Library class
+*** Building collections
+**** Arrays and ArrayedCollections
+***** the (start ... end) shortcut
+***** Building arrays with =rand= and =fill=.
+***** Building arrays with =do=, =collect=, =select=
+**** Building Dictionaries
+**** Building Events (=make=).
+*** Accessing collections
+**** Accessing ArrayedCollections by index
+**** Range indexes
+**** Accessing by keys.  Identity vs Equality
+**** Accessing by test. Sets.
+*** Modifying the contents of collections
+*** Changing the dimensionality and structure of collections
+**** flop, flat, bubble, curdle
+**** Specialized structure manipulations: reverse, rotate, stutter, mirror, pyramid
+**** J-aspects in SuperCollider
+*** =add=, =addAll=, =remove=
+
+** Conditional Structures
+*** if, case, switch.
+*** Shortcuts for conditionals testing for nil: ?, ??, !?
+
+** Iteration
+
+*** do, collect, select, reject, detect, while, loop
+
+*** List comprehensions
+
+*** The message =all=
+
+*** inf as count limit argument in a loop. Danger: use wait to avoid freeze
+
+
+** The Interpreter
+*** String:interpret vs. String:compile
+*** Interpreter variables
+*** How the interpreter is used during sclang runtime
+** What is =this=?
+*** =this= is the interpreter when in code evaluated by the user directly
+*** =this= is the current object when run in a method compiled in code of a Class
+
+
+** Init, Startup, ServerBoot actions
+** Closures
+** Current environment
+*** pushing the current environment
+*** current environment inside closures (!)
+** Events in depth
+*** Event:use / Event:make
+*** Event prototypes
+*** Parent event
+*** Event key/values behaving as methods
+
+When a Function is stored in an Event under a key, one can use message-sending syntax to evaluate that Function. 
+
+** Patterns
+
+*** Basic pattern examples
+
+**** Getting a stream from a pattern
+
+**** Sequential patterns
+
+***** Pseq
+
+***** Pseries
+
+***** Pser
+
+**** Random patterns
+
+***** Pbrown
+
+***** Prand
+
+***** Pwhite
+
+*** Combining patterns
+**** Nesting patterns
+**** Arithmetic operations on patterns
+
+**** Patterns for repeating patterns or their elements
+
+***** Pn
+
+***** Pstutter
+
+**** Patterns for filtering elements of other patterns
+
+***** Pcollect
+
+***** Pselect
+
+***** Preject
+
+
+
+
+*** Overview of Pattern classes
+    :PROPERTIES:
+    :DATE:     <2020-12-12 Sat 00:46>
+    :END:
+
+To post all subclasses of Pattern, run this: 
+
+#+begin_src sclang
+Pattern.dumpClassSubtree;
+#+end_src
+
+Here is the result posted by the statement above:
+
+#+begin_src sclang
+[
+  Pseries
+  Pfunc
+  Pstep
+    [ Pseg ]
+  Plorenz
+  Pevent
+  Pstep3add
+  Pstep2add
+  Pif
+  Pindex
+  Pgeom
+  Pquad
+  Pchain
+  PstepNfunc
+    [ PstepNadd ]
+  Punop
+  Pprob
+  Pbrown
+    [ Pgbrown ]
+  EventPattern
+  Ppoisson
+  Spawner
+  Pget
+  Pmono
+    [ PmonoArtic ]
+  PbindProxy
+  Pkey
+  FilterPattern
+  [
+    Psetpre
+      [ Paddpre Pmulpre ]
+    Pstutter
+      [ PdurStutter ]
+    PfinQuant
+    Pbus
+    Plambda
+    Pbindf
+    Pdiff
+    FuncFilterPattern
+      [ Pselect Pfset Pwhile Preject Pcollect ]
+    Psym
+    [
+      Psym1
+      Ptsym
+      Pnsym
+        [ Pnsym1 ]
+    ]
+    Prorate
+    Pstretch
+      [ Pstretchp ]
+    Pfin
+      [ Pfinval ]
+    Pfindur
+    PfadeIn
+      [ PfadeOut ]
+    Pavaroh
+    Pdrop
+    Pclump
+      [ Pflatten ]
+    Pwrap
+    Ptrace
+    Prewrite
+    Pprotect
+    Psync
+    Pplayer
+    Plag
+    Pseed
+    Pset
+    [
+      Pmul
+      Padd
+      Psetp
+        [ Paddp Pmulp ]
+    ]
+    Pclutch
+    PAbstractGroup
+      [ PparGroup Pgroup ]
+    Pn
+      [ Pgate ]
+    Pspawn
+    Pfx
+      [ Pfxb ]
+    Pconst
+  ]
+  Pcauchy
+  Pdict
+  Peventmod
+  PatternProxy
+  [
+    Pdefn
+    TaskProxy
+    [
+      Tdef
+      EventPatternProxy
+      [
+        Pdef
+          [ Pbindef ]
+      ]
+    ]
+  ]
+  Phenon
+  Pbeta
+  Pgauss
+  Penvir
+  Pnaryop
+    [ PdegreeToKey ]
+  Ptime
+  Pbind
+  Pproto
+  ListPattern
+  [
+    Pwalk
+    Ppar
+    [
+      Pgpar
+        [ Pgtpar ]
+      Ptpar
+    ]
+    Pwrand
+    Pdfsm
+    Pshuf
+    Pseq
+      [ Ppatlace Pser Place ]
+    Pslide
+    Ptuple
+    Prand
+    Pfpar
+    Pxrand
+    Pfsm
+  ]
+  Pswitch
+    [ Pswitch1 ]
+  Pbinop
+  Pfhn
+  Pwhite
+    [ Pmeanrand Plprand Pexprand Phprand ]
+  Pstandard
+  Pfuncn
+  Ppatmod
+  Platoo
+  Pgbman
+  PlinCong
+  Prout
+    [ Pspawner ]
+  Plet
+  Plazy
+  [
+    PlazyEnvir
+      [ PlazyEnvirN ]
+  ]
+]
+#+end_src
+
+The resulting subtree is dissussed in the following sections
+
+
+*** Pseries
+*** Pfunc
+*** Pstep
+
+**** [ Pseg ]
+
+*** Plorenz
+
+*** Pevent
+
+*** Pstep3add
+
+*** Pstep2add
+
+*** Pif
+
+*** Pindex
+
+*** Pgeom
+
+*** Pquad
+
+*** Pchain
+
+*** PstepNfunc
+
+**** [ PstepNadd ]
+
+*** Punop
+
+*** Pprob
+
+*** Pbrown
+
+**** [ Pgbrown ]
+
+
+*** Ppoisson
+
+*** Spawner
+
+*** Pget
+
+*** Pmono
+
+**** [ PmonoArtic ]
+
+*** PbindProxy
+
+*** Pkey
+
+*** FilterPattern
+
+****    [ Psetpre
+
+***** [ Paddpre 
+
+***** Pmulpre ]
+       
+***** Pstutter
+       
+******   [ PdurStutter ]
+
+***** PfinQuant
+       
+***** Pbus
+       
+***** Plambda
+       
+***** Pbindf
+       
+***** Pdiff
+       
+***** FuncFilterPattern
+       
+******   [ Pselect 
+
+****** Pfset 
+
+****** Pwhile 
+
+****** Preject 
+
+****** Pcollect ]
+
+***** Psym
+       
+****** [ Psym1
+         
+****** Ptsym
+         
+******  Pnsym
+*******    [ Pnsym1 ]
+***** Prorate
+***** Pstretch
+****** [ Pstretchp ]
+***** Pfin
+******   [ Pfinval ]
+***** Pfindur
+***** PfadeIn
+****** [ PfadeOut ]
+***** Pavaroh
+***** Pdrop
+***** Pclump
+******   [ Pflatten ]
+***** Pwrap
+***** Ptrace
+***** Prewrite
+***** Pprotect
+***** Psync
+***** Pplayer
+***** Plag
+***** Pseed
+***** Pset
+****** [ Pmul
+****** Padd
+****** Psetp
+******* [ 
+******* Paddp 
+******* Pmulp ]
+        ]
+***** Pclutch
+***** PAbstractGroup
+****** [ PparGroup 
+****** Pgroup ]
+***** Pn
+****** [ Pgate ]
+***** Pspawn
+***** Pfx
+****** [ Pfxb ]
+***** Pconst
+    ]
+**** Pcauchy
+**** Pdict
+**** Peventmod
+**** PatternProxy
+***** [ Pdefn
+***** TaskProxy
+****** [ Tdef
+****** EventPatternProxy
+*******  [ Pdef
+******** [ Pbindef ]
+           ]
+         ]
+       ]
+**** Phenon
+**** Pbeta
+**** Pgauss
+**** Penvir
+**** Pnaryop
+**** [ PdegreeToKey ]
+**** Ptime
+**** Pbind
+**** Pproto
+**** ListPattern
+***** [Pwalk
+***** Ppar
+***** [ Pgpar
+****** [ Pgtpar ]
+****** Ptpar
+       ]
+***** Pwrand
+***** Pfsm
+    ]
+***** Pdfsm
+***** Pshuf
+***** Pseq
+******  [ Ppatlace 
+****** Pser 
+****** Place ]
+***** Pslide
+***** Ptuple
+***** Prand
+***** Pfpar
+***** Pxrand
+**** Pswitch
+***** [ Pswitch1 ]
+**** Pbinop
+**** Pfhn
+**** Pwhite
+***** [ Pmeanrand 
+***** Plprand 
+***** Pexprand 
+***** Phprand ]
+**** Pstandard
+**** Pfuncn
+**** Ppatmod
+**** Platoo
+**** Pgbman
+**** PlinCong
+**** Prout
+***** [ Pspawner ]
+**** Plet
+**** Plazy
+***** [ PlazyEnvir
+****** [ PlazyEnvirN ]
+     ]
+   ]
+
+** Streams
+
+*** Stream basics
+
+**** Creating a Stream
+
+**** Routines can work as streams (so what is the difference???????)
+**** next and nextN
+*** Advanced operations on streams
+**** all
+**** subSample
+
+...
+** The dependency mechanism
+*** Raison d'être. Similarity to private methods
+*** Problems: Chosing action
+*** Reasons for using Notification vs. Drawback of many objects involved
+*** Alternative implementations: Notification vs. NotificationCentre
+
+ Aspects to compare:
+ Performance, functionality, interface.
+
+** Clocks, defer, sched
+** Using the AppClock in GUIs
+** Routines
+** Tasks
+** How Pbind works
+*** what is embedInStream? How does it work
+**** getting the next value from each key-value pair
+**** embedding each stream's value
+** EventPattern as alternative to Pbind
+** Introspection and its uses
+*** For learning and understanding code
+*** Inside programs
+** Symbols vs. Strings
+** Copying and in-place modification of objects
+
+=reverse= modifies a Signal in-place ...
+=add= may 
+
+** Hash
+** Primitives
+** The structure of the Class Hierarchy Tree
+*** Meta- Classes (Classes of Classes)
+
+Note: Compare to structure of the Class Hierarchy in SmallTalk.
+
+* Music and Audio
+** Understanding frequency in musical intervals
+*** Logarithmic nature of interval perception
+**** In intervals, we do not subtract frequences. Instead, we divide them.
+***** Compare the same intervals in different frequency ranges
+**** Possibly this is related to the fact that in sine signals, to change the frequency, one multiples the arithmetic series that generates the signal.
+*** Using plot to understand linear vs. logarithmic curves
+*** Using Line and XLine to understand the logarithmic perception of pitch
+Notes: 
+**** To hear the difference clearly between Line/Xline, Falling line is better than rising line 
+**** Perhaps use Sample-and-Hold to convert line to steps for clarity
+**** Also use Demand with arrays (arithmetic vs. geometric series) to demonstrate non-linearity of pitch perception
+** Understanding Sin, sin/cos, phase and symmetry in signals
+
+Use plot to demonstrate how sine is calculated from an arithmetic sequence of numbers (in an Array).
+Aspects to show:
+*** Normalize
+*** Calculate sine by sending a single message to an array
+*** Plot the signal to see it
+*** Shift phase by rotating an array of numbers 
+*** Change frequency by scaling the signal (with multiply!)
+***  Signal cancellation through phase difference
+** Patterns
+*** Patterns-Streams-Events basics
+*** Pbind playing mechanism
+*** Pbind examples, main features and variants
+
+Instrument, degree, duration, chords, arpeggio, legato.
+Ppar, Pmono, etc.
+
+*** Scales, Tunings and Transposition in Patterns
+*** Quant and synchronization
+*** Regular Pattern Stream Generators
+*** Filter Patterns
+*** Advanced Pattern Manipulation Tools: Pkey etc.
+*** Pbind, and its limits
+*** Playing Pbind and its zoo of quasi add-ons in Event
+(are all of them necessary?)
+*** Some exotic pattern types/topics: Fdef, LazyEnvir, Plazy, PlazyEnvir ...
+*** Modifying Patterns while they are playing (in an EventStream)
+**** The EventPattern Class
+** Demand UGens
+** Some enigmatic UGens (for non Audio-Engineers)
+
+Gate, Latch (Sample and Hold), Amplitude, Changed, Integrate, PulseCount, Stepper, Summer, WrapSummer
+
+How to calculate the duration of a condition being true?
+
+Comparing sigals.
+
+Select.
+** Control inputs in SynthDefs and Synth Functions.
+
+Arguments vs. \symbol.kr.
+
+** Feedback 
+** Envelopes
+*** envelope shapes and shortcuts
+*** envelopes with release node
+*** envelopes with loops
+*** changing envelope shapes on the fly
+*** emulating envelopes with Demand ugens (And Line?)
+*** Can one use buffers with Demand to store huge envelope shapes?
+** Triggering Envelopes
+*** Release vs. free. 
+
+Show the practical/musical difference of release vs. free.
+
+*** Triggering release with gate.
+Why this is necessary for playing patterns.
+
+Retriggering vs. single-pass envelopes, distinguished with =doneAction=.
+
+ Problems in triggering from sclang due to latency and time limits in signal response.  Instead, trigger a single change in a signal, and track that change with =Changed.kr=. 
+
+** Demand UGens and =Duty=
+** Triggering events from (control) signals
+** All that async headache
+*** Waiting for Server to boot
+*** Waiting for SynthDefs and Buffers to load
+*** Waiting for Synths to start or end
+*** Tracking state of Synths
+** Things one can do with PlayBuf and BufRd
+** Reading Buffers from file. Getting Buffer info
+*** Alex McLeans' buffer reading trick from SuperDirt
+
+Important for reading large numbers of files!
+
+** Buffer Granulation
+*** Triggering grains
+** Linking Synths
+*** Synth Order
+*** Creating and managing Groups in order
+*** Managing i/o bus connections
+*** Many-to-one and One-to many synth link configurations
+
+* Things that need radical cleaning (or in some cases even _TRASHING_) in SCClassLibrary
+** NotificationCenter (Certainly)
+** AbstractResponderFunc (Very probably)
+** Server and its helper funcs such as ServerWatcher (Painful, but must)
+** Default Event - Event Prototype (Perhaps, perhaps, but would be nice)
+
+Very complex. Would need a deep study before any improvements can be suggested.
+However, it seems that things should and can be simpler.
+
