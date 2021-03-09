@@ -254,15 +254,5 @@ SynthDef("fm2", {arg freq = 440, modindex = 10, amp = 0.1, pos = 0, gate = 1, at
 	6.wait;
 	~cplay.stop;
 	~fplay = ~f.play;
-
-
-
-
-
-
-
-
-
-
 }.fork
 )
