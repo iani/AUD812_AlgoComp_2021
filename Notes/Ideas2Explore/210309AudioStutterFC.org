@@ -1,0 +1,58 @@
+#  9 Mar 2021 14:06
+
+From facebook post & comments
+
+https://www.facebook.com/groups/2222754532/permalink/10159234182979533
+
+* So, audio stutter FX? Anyone? Gimme your best! Thanks 😉
+
+(Alexandre Torres Porres
+March 5 at 1:57 AM  · )
+
+6 Comments
+Comments
+** Jef T-Scale : granular processing c/o Eli Fieldsteel
+ well Eli Fieldsteel tutorials are a good start, here's the one on buffers and from there you can defo make some stutter/granular processing 🙂
+ https://www.youtube.com/watch?v=_GZmuvmgtUc
+ SuperCollider Tutorial: 8. Buffers
+ YOUTUBE.COM
+ SuperCollider Tutorial: 8. Buffers
+ SuperCollider Tutorial: 8. Buffers
+
+      · Reply
+      · Share
+      · 4d
+** Grey's Web Presence : Comb Filter & Concat
+ i've used a couple things to various results:
+1. comb filter, set delay time to match whatever your stutter rate is, and use a gate to send audio into the combfilter and set decay up high when the gate is high, and bypass and set the decay low when the gate is low
+2. gotten pretty cool effects from Concat (not sure if it's part of sc3-plugins or a quark) which saves your incoming stream to a buffer, and uses another stream to search for similar sounds in the buffer and play them. kind of hard to describe, but you could send some speech into the source, and drums into the control and it will chop up and play parts of your speech to sound like the drums. there's a parameter called 'matchLength' that is basically the size of the slice of the source audio in seconds. so you can use that to set the 'stutter rate' the same way you would with the comb filter. experiment with different source and control signals, you can definitely get some wild stuff. I like to use a control signal of just some noise, but step modulated at some rhythmic rate.
+
+ 4
+
+      · Reply
+      · Share
+      · 4d
+**  Mario Lang : granular synthesis
+ one of the more recent videos by eli fieldsteel uses granular synthesis to do a pretty sexy stutter effect. i believe it would even work with live signals.
+
+      · Reply
+      · Share
+      · 3d
+** Joonas Siren : Concat
+ +1 for Concat! I have been using it very heavily
+ Concat.ar:
+ https://doc.sccode.org/Classes/Concat.html… See More
+ Concat | SuperCollider 3.11.1 Help
+ DOC.SCCODE.ORG
+ Concat | SuperCollider 3.11.1 Help
+ Concat | SuperCollider 3.11.1 Help
+ 1
+
+      · Reply
+      · Share
+      · 3d
+** Patrick Pagano : BBCut
+ For me it will always be BBCUT
+  · Reply
+  · Share
+  · 15h
