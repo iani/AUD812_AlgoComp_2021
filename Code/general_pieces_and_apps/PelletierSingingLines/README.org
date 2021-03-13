@@ -1,0 +1,10 @@
+The SuperCollider from Pelletier-Augers audiovisual performance
+in Montreal
+
+From: https://github.com/pelletierauger/Singing-Lines
+
+See also: 
+https://pelletierauger.com/en/blog/
+
+A video of Pelletier-Auger's performance is found here: 
+https://www.youtube.com/watch?v=6QXGw4NHXzE Les framboisiers sous la neige - SuperCollider & p5.js

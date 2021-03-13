@@ -1,4 +1,8 @@
 //  9 Mar 2021 14:16
+/*
+Introduction to concatenative synthesis.
+(Copy of examples from doc.sccode.org).
+*/
 //================================================================
 //:from: https://doc.sccode.org/Classes/Concat2.html
 b = Buffer.read(s,"sounds/a11wlk01.wav");
