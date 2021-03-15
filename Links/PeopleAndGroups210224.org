@@ -5,6 +5,11 @@
 * Zach Liebermann
 * Amit Pitaru
 * James McCartney
+* Brian Heim
+SuperCollider maintainer, developer at Ableton
+
+https://www.brianlheim.com/
+
 * Ross Bencina
 * Julian Rohrhuber
 * Alberto de Campo
