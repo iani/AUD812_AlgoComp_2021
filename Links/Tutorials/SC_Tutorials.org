@@ -1,4 +1,9 @@
 
+
+* A Gentle Introduction to SuperCollider
+
+https://scholarcommons.scu.edu/faculty_books/91/
+
 * Eli Fieldsteel SuperCollider Tutorial Series
   :PROPERTIES:
   :DATE:     <2021-02-18 Thu 16:08>

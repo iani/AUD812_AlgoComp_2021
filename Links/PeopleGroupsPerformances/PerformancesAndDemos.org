@@ -1,0 +1,38 @@
+
+* Fox Dot demos and performances
+
+- Noodling around with FoxDot and SuperCollider : https://www.youtube.com/watch?v=CXrkq7u69vU
+- "CL4UDS" - Live Coding with FoxDot and SuperCollider : https://www.youtube.com/watch?v=bdqAJwM1ZLM
+- "fkd" Live Coding with FoxDot and SuperCollider : https://www.youtube.com/watch?v=1PoMBWNiaX0
+- Ryan Kirkbride: Programming Music for Performance: Live coding with FoxDot : https://www.youtube.com/watch?v=XRNFBZlBeuI
+- FoxDot "Loop" synth demo : https://www.youtube.com/watch?v=jfjAOZnTwAM
+- "Delta" - Live Coding with FoxDot : https://www.youtube.com/watch?v=6i4PJ128d7Y
+- Making melodic pop techno in FoxDot : https://www.youtube.com/watch?v=No-bBhbJAac
+- Melodic jam with FoxDot sequencing a MIDI device : https://www.youtube.com/watch?v=SLMoovsMH04
+- FoxDot Tutorial 3: Scheduling Events : https://www.youtube.com/watch?v=v8niuWEHUiw
+- LiveCoding / FoxDot / Peaceful piano : https://www.youtube.com/watch?v=rzPS4hRF1BU 
+- FoxDot Tutorial 4: Getting to know the "play" SynthDef : https://www.youtube.com/watch?v=fPP4xAeEb-Y
+- FoxDot melodic ambient improvisations : https://www.youtube.com/watch?v=6JOUvuFGNK4
+- "Choppy Water" - Live Coding with FoxDot (Python and SuperCollider) : https://www.youtube.com/watch?v=znCVoHj3pQc
+- FoxDot music improvisation with crt-live-coding : https://www.youtube.com/watch?v=_8ITuKIi_Is
+- FoxDot session 001 : https://www.youtube.com/watch?v=3ZsZI9B-sDI
+- Live coding music with FoxDot | Python | Algorave | Momentum Tech Conference 2019 : https://www.youtube.com/watch?v=ziD5diimFHM
+- Live Coding Pop Music with Python and SuperCollider : https://www.youtube.com/watch?v=xXNB1BbKY8A&t=162s
+- FoxDot Livecoding 勉強中 : https://www.youtube.com/watch?v=9P3NIxmIF-o
+
+* Sonic Pi 
+- Daft Punk - Aerodynamic with Sonic Pi : https://www.youtube.com/watch?v=cydH_JAgSfg
+- Making Music with Code (Using Sonic Pi) : https://www.youtube.com/watch?v=QGLPinGZhfg
+
+* Live coding - various
+- "Chemical" - Live Coding in SuperCollider : https://www.youtube.com/watch?v=jTJXrJWtUBg
+- Run the code: is algorave the future of dance music? : https://www.youtube.com/watch?v=h340aNznHnM
+- Benoit and the Mandelbrots sc livecoding @ TED https://www.youtube.com/watch?v=Ix2b_qFYfAA
+
+* Other
+
+- Air - Song made with Haskore and Supercollider : https://www.youtube.com/watch?v=d2JvOwS26Zg
+- Fractus V for Percussion and SuperCollider (Audio & Score) : https://www.youtube.com/watch?v=pOWUDEiHQLw
+- Introduction to Live Coding Music and Visuals : https://www.youtube.com/watch?v=-QY2x6aZzqc&t=158s
+- Live coding dub techno in Sonic Pi : https://www.youtube.com/watch?v=a1RxpJkvqpY
+

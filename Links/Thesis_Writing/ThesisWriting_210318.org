@@ -1,0 +1,34 @@
+
+*Tools and methods for writing theses / coursework.*
+
+* _Github_
+
+* _Markdown_
+
+.md
+
+(See markdown tutorials).
+
+* /Pandoc/ (?)
+
+https://pandoc.org/MANUAL.html
+
+*LaTeX*
+
+* _Zotero_
+
+* Βιβλιογραφία
+
+Chicago NNb Author-Date, where
+NN = any one of: 15, 16, 17 ...
+
+This refers to the format for /listing/ your references *at the end of the paper*
+_AND_ to the format used for /citing/ your preferences *in the paper*.
+
+*ΠΡΕΠΕΙ ΚΑΘΕ ΒΙΒΛΙΟΓΡΑΦΙΚΗ ΠΑΡΑΠΟΜΠΗ ΝΑ ΕΧΕΙ ΑΡΙΘΜΗΤΙΚΑ ΤΗΝ ΣΕΛΙΔΑ Ή ΤΙΣ ΣΕΛΙΔΕΣ ΑΠΟ ΟΠΟΥ ΠΗΡΑΤΕ ΤΟ ΧΩΡΙΟ ΠΟΥ ΑΝΑΦΕΡΕΣΤΕ, Η ΤΙΣ ΣΕΛΙΔΕΣ ΓΕΝΙΚΑ ΣΤΙΣ ΟΠΟΙΕΣ ΑΝΑΦΕΡΕΣΤΕ*
+
+
+
+
+
+

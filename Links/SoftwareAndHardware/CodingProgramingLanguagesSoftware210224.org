@@ -15,7 +15,7 @@ https://xkcd.com/378/ nuff said
 - https://www.emacswiki.org/emacs/EmacsAndXEmacs
 - https://www.emacswiki.org/emacs/EmacsImplementations
 
-** Atom
+** _Atom_
 
 https://atom.io/
 
@@ -35,7 +35,7 @@ https://nodejs.org/en/
    :PROPERTIES:
    :DATE:     <2021-02-24 Wed 10:52>
    :END:
-*** SuperCollider
+*** _SuperCollider_
 
 - Home page :: https://supercollider.github.io/
 - Forum :: https://scsynth.org/
@@ -127,26 +127,33 @@ https://www.youtube.com/watch?v=CXrkq7u69vU
 
    https://theseanco.github.io/howto_co34pt_liveCode/3-4-Euclidean-Rhythms/
 
-*** gibber (also graphics)
+*** Other live-coding tools using SuperCollider
 
-https://gibber.cc/alpha/playground/
+**** tidal cycles
 
-*** sonic pi
+ https://tidalcycles.org/Welcome
 
-https://sonic-pi.net/
+**** _fox dot_
 
-*** fox dot
+ https://foxdot.org/
 
-https://foxdot.org/
+**** sonic pi
 
-*** tidal cycles
+ https://sonic-pi.net/
 
-https://tidalcycles.org/Welcome
+**** Sorceress (sound synthesis with SuperCollider, using rust)
 
-*** Orca (MIDI / OSC sequencer + esoteric minimal programming language)
+ https://crates.io/crates/sorceress
 
-- https://github.com/hundredrabbits/Orca
-- https://llllllll.co/t/orca/22492
+*** Other live coding environments
+**** gibber (also graphics)
+
+ https://gibber.cc/alpha/playground/
+
+**** Orca (MIDI / OSC sequencer + esoteric minimal programming language)
+
+ - https://github.com/hundredrabbits/Orca
+ - https://llllllll.co/t/orca/22492
 
 ** Alex McLean talk: Introduction to Live Coding Music and Visuals
    :PROPERTIES:
@@ -196,10 +203,24 @@ NYC.  Zach Liebermann, Amit Pitaru
 
 https://sfpc.io/
 
+* Collaborative, networked live coding
+
+- Troop https://toplap.org/troop-a-collaborative-editor-for-live-coding/ (Φαίνεται να είναι εγκαταστήσιμο στα περισσότερα λειτουργικά. Δουλεύει σε βάση Python).
+- Extramuros (Eldad Tsabary) https://www.youtube.com/watch?v=ECEwTJWKEGc (Δεν είναι γνωστό κατά πόσο είναι εγκαταστήσιμο).
+
 * Other audio / music software of interest
   :PROPERTIES:
   :DATE:     <2021-02-24 Wed 10:56>
   :END:
+
+** Leimma, Apotome (Λείμμα και Αποτομή) Software for non-european music tratitions
+   :PROPERTIES:
+   :DATE:     <2021-03-03 Wed 16:01>
+   :END:
+
+https://isartum.net/apotome
+
+https://isartum.net/leimma/
 
 ** AudioMulch
 
@@ -252,3 +273,14 @@ https://www.ableton.com/en/
 
 - https://cycling74.com/
 - https://www.ableton.com/en/live/max-for-live/
+
+* See also ... 
+  :PROPERTIES:
+  :DATE:     <2021-03-03 Wed 11:37>
+  :END:
+
+- Raspberry Pi
+See also separate file: file:OpenSourceExperimentalTinyToolsRoundup.md
+
+
+
